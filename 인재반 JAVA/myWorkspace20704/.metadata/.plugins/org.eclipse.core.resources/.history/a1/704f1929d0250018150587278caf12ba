@@ -1,0 +1,22 @@
+package day01;
+
+import java.util.Scanner;
+
+/*
+ * <자료 입력받기>
+ * 1. Scanner 클래스
+ * - 콘솔창에서 입력받을때
+ * - Scanner 라고 치고, import한다
+ * 2. JOptionPane 클래스
+ * 
+ */
+
+public class Work01 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("숫자를 입력하세요");
+		int i=sc.nextInt();
+		
+		System.out.println(i+"를 입력하셨군요");
+	}
+}

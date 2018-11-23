@@ -1,0 +1,33 @@
+package day1112;
+
+class JoinThread extends Thread{
+	int total;
+	@Override
+	public void run() {
+		for(int i=1;i<=100;i++) {
+			total+=i;
+		}
+	}
+}
+
+public class ThreadEx06 {//main class
+
+	public static void main(String[] args) {
+		//하나의 스레드가 1부터 100까지의 총합을 구한다
+		//메인스레드가 총합을 출력
+		JoinThread t = new JoinThread();
+		t.start();
+		
+		try {
+			t.join();
+		} catch (InterruptedException e) {
+			
+		}
+		//joinThread가 종료될때까지 다른 스레드는 대기시켜야 함
+		//==>join()
+		
+		System.out.println("1~100까지의 합:"+t.total);
+		
+	}//end of main method
+
+}//end of main class

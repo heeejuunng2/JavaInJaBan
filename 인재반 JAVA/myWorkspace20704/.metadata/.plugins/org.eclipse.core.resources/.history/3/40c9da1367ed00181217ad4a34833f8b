@@ -1,0 +1,27 @@
+package day1112;
+
+class Time implements Runnable{
+
+	@Override
+	public void run() {
+		//10초 9초 8초....0초 출력하도록 오버라이드
+		for(int i=10;i>=0;i--) {
+			System.out.print(i+"초 ");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+}//end of Time class
+
+public class ThreadEx07 {//main class
+
+	public static void main(String[] args) {
+		
+		
+	}//end of main method
+
+}//end of main class

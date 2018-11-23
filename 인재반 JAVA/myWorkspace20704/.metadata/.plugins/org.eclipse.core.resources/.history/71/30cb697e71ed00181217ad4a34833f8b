@@ -1,0 +1,29 @@
+package day1112;
+/*
+ * 콘솔창에는 1초부터 카운트가 되고있고
+ * 구구단 문제가 jop로 계속 나오고 있고
+ * 구구단을 5문제 맞히면 경과된 초를 출력
+ */
+class Count3 extends Thread{
+	int i;
+	@Override
+	public void run() {
+		while(true) {
+			System.out.println(++i+"초");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+			
+			}
+		}
+	}
+}//end of Count3 class
+
+public class Quiz09_teacher {//main class
+
+	public static void main(String[] args) {
+		
+		
+	}//end of main method
+
+}//end of main class

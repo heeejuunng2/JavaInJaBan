@@ -1,0 +1,54 @@
+package day02;
+/*
+ * <제어문>
+ * 1. 조건문 : if, switch, case
+ * 2. 반복문 : for, while, do~while
+ * 3. 기타 제어문 : continue, break, return
+ */
+public class Work01 { //main class
+
+	public static void main(String[] args) {
+		//1. for
+		for(int i=1;i<=10;i++) {
+			if(i%4==0){
+				System.out.println(i);
+			}//4, 8출력 
+		}//for문
+		
+		//2. while
+		int i=1;
+		while(i<=10) {
+			if(i%4==0)
+				System.out.println(i);
+			i++;
+		}//while문
+		
+		//3.do~while
+		i=1;
+		do {
+			if(i%4==0)
+				System.out.println(i);
+			i++;
+		}while(i<=10);
+		
+		//4. break
+		for(i=1;i<=10;i++) {
+			//System.out.println(i);
+			if(i%4==0) {
+				break;
+				//continue;
+				}//if문 끝
+			System.out.println(i);
+		}//for문 끝
+		
+		//6. return문 ==> 진행중이던 메소드를 종료한다
+		//	 main함수에서 return문을 쓰면, 프로그램이 종료
+		for(i=1;i<=10;i++) {
+			if(i%4==0)
+				return; //return은 메인함수 끝내는 제어문 
+			System.out.println(i);
+		}//for문 끝
+		System.out.println("return실행후 sysout될까?");
+	}//end of main
+
+}//end of class

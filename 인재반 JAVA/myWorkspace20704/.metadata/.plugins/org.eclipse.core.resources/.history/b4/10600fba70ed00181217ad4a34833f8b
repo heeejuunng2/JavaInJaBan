@@ -1,0 +1,10 @@
+package day1112;
+
+public class Quiz09_teacher {//main class
+
+	public static void main(String[] args) {
+		
+		
+	}//end of main method
+
+}//end of main class
